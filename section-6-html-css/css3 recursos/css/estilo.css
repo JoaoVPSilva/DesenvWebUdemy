@@ -1,17 +1,78 @@
+/**************************************************
+Animacoes */
+
+@keyframes animacao-caixa {
+    from {
+        /*Estado Inicial*/
+        background: red;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to {
+        /*Estado Final*/
+        background: green;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
 #caixa {
     width: 300px;
     height: 300px;
-    background: radial-gradient(red, green, yellow);
-    /* background: linear-gradient(97deg, #bde0ff, #dbbdff); */
-    /*to left ou 97deg (graus)*/
-    /* background: url("../imagens/camera.png"); */
+    background: red;
+    position: relative;
+    /*Posicao podera ser mudada na animacao*/
+    /* animation-name: animacao-caixa;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite; Matem em loop a animacao, ou pode ser definido a quantidade de vezes
+    animation-direction: alternate; Faz a animacao voltar animada ao estado inicial */
+    animation: animacao-caixa 5s 3s infinite alternate;
+    /*Pode ser resumido em 1 so linha*/
 }
 
-#caixa h1 {
-    text-shadow: 20px 20px 5px rgba(0, 0, 0, 0.5);
-    /*altura, largura, "blur",se tiver um 4 valor espalha a sombra, cor*/
-    /* background: rgba(255, 255, 255, 0.6); */
-}
+
+/**************************************************
+ Degrades */
+
+
+/*#caixa {
+    /* width: 300px;
+    height: 300px;
+    background: radial-gradient(red, green, yellow); */
+
+
+/* background: linear-gradient(97deg, #bde0ff, #dbbdff); */
+
+
+/*to left ou 97deg (graus)*/
+
+
+/* background: url("../imagens/camera.png"); */
+
+
+/* } */
+
+
+/* #caixa h1 { */
+
+
+/* text-shadow: 20px 20px 5px rgba(0, 0, 0, 0.5); */
+
+
+/*altura, largura, "blur",se tiver um 4 valor espalha a sombra, cor*/
+
+
+/* background: rgba(255, 255, 255, 0.6); */
+
+
+/* } */
+
+
+/**************************************************
+ Border-radiius e padding */
 
 
 /* #caixa {
@@ -35,4 +96,4 @@
 
 
 /* border-radius: 150px;   Para deixar um box redondo, radius = metade do tamanho
-}*/
+/* }*/
