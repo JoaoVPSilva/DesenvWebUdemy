@@ -9,7 +9,7 @@
             var altura = prompt('Digite a altura da pessoa (em cm): ');
             var peso = prompt('Digite o peso da pessoa (kg): ');
             var m;
-            var r;
+            // var r = null;
             
             //conversao para float
             parseFloat(altura);
@@ -19,30 +19,32 @@
             altura /= 100;
             m = peso / Math.pow(altura, 2);
 
+            // document.write(r);
+
             if (m <= 16){
-                r = 'Baixo peso, MUITO GRAVE';
+                var r = 'Baixo peso, MUITO GRAVE';
             }
-            else if(m > 16 && m <= 16,99){
+            else if(m > 16 && m <= 16.99){
                 // document.write('Teste');
-                r = 'Baixo peso, GRAVE';
+                var r = 'Baixo peso, GRAVE';
             }
-            else if(m > 17 && m <= 18,49){
-                r ='Baixo peso';
+            else if(m > 17 && m <= 18.49){
+                var r ='Baixo peso';
             }
-            else if(m > 18,5 && m <= 24,99){
-                r = 'Peso normal';
+            else if(m > 18,5 && m <= 24.99){
+                var r = 'Peso normal';
             }
-            else if(m > 25 && m <= 29,99){
-                r = 'Sobrepeso';
+            else if(m > 25 && m <= 29.99){
+                var r = 'Sobrepeso';
             }
-            else if(m > 30 && m <= 34,99){
-                r = 'Obesidade grau I';
+            else if(m > 30 && m <= 34.99){
+                var r = 'Obesidade grau I';
             }
-            else if(m > 35 && m <= 39,99){
-                r = 'Obesidade grau II';       
+            else if(m > 35 && m <= 39.99){
+                var r = 'Obesidade grau II';       
             }
             else{
-                r = 'Obesidade grau III';
+                var r = 'Obesidade grau III';
             }                    
 
             document.write(nome + ' possui índice de massa corporal igual a ' + m + ', sendo classificado como : ' + r);
